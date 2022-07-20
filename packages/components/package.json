@@ -1,6 +1,6 @@
 {
-  "name": "sy-ui",
-  "version": "1.0.0",
+  "name": "liusy-ui",
+  "version": "1.0.1",
   "main": "index.ts",
   "scripts": {
     "build": "vite build & esno build/buildLess"
@@ -10,7 +10,7 @@
     "lib"
   ],
   "keywords": [
-    "sy-ui",
+    "liusy-ui",
     "vue3组件库"
   ],
   "author": "夏。",

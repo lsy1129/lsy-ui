@@ -1,10 +1,10 @@
 {
-  "name": "sy-ui",
-  "version": "2.0.5",
+  "name": "liusy-ui",
+  "version": "1.0.1",
   "main": "lib/indexs",
   "module": "es/index.js",
   "files": ["es", "lib"],
-  "keywords": ["sy-ui", "vue3组件库"],
+  "keywords": ["liusy-ui", "vue3组件库"],
   "author": "夏。",
   "license": "MIT",
   "description": "",
