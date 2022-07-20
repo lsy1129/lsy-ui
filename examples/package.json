@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sy-ui": "workspace:^1.0.0"
+    "liusy-ui": "workspace:^1.0.0"
   }
 }

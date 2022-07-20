@@ -30,9 +30,9 @@ importers:
 
   examples:
     specifiers:
-      sy-ui: workspace:^1.0.0
+      liusy-ui: workspace:^1.0.0
     dependencies:
-      sy-ui: link:../packages/components
+      liusy-ui: link:../packages/components
 
   packages/components:
     specifiers: {}

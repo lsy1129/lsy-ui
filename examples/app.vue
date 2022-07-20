@@ -58,7 +58,7 @@
     </div>
 </template>
 <script lang="ts" setup>
-import { syButton } from 'sy-ui'
+import { syButton } from 'liusy-ui'
 
 </script>
 <style lang="less">
