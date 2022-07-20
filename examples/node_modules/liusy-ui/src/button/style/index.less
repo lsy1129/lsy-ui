@@ -1,0 +1,1175 @@
+@import '../../style/index.less';
+.sy-button {
+    line-height:1;
+    position:relative;
+    display:inline-block;
+    white-space:nowrap;
+    text-align:center;
+    background-image:none;
+    border:1px solid transparent;
+    box-shadow:0 2px #00000004;
+    cursor:pointer;
+    transition:all .3s cubic-bezier(.645, .045, .355, 1);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
+    touch-action:manipulation;
+    height:32px;
+    padding:4px 15px;
+    font-size:14px;
+    border-radius:2px;
+    color:#000000d9;
+    border-color:@border-color;
+    background:#fff;
+    &,&:active,&:focus{
+      outline:0;
+    }
+
+    &:hover,&:focus{
+      color:@sy-primary-color-hover;
+      border-color:@sy-primary-color-hover;
+      background:#fff;
+    }
+
+    &:not([disabled]):hover {
+      text-decoration:none;
+    }
+
+    &:not([disabled]):active {
+      outline:0;
+      box-shadow:none;
+    }
+
+    &[disabled] {
+      cursor:not-allowed;
+    }
+
+    &[disabled]>* {
+      pointer-events: none;
+    }
+
+    &>a:only-child {
+      color:currentcolor;
+    }
+
+    &>a:only-child:after {
+      position:absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      background:transparent;
+      content:"";
+    }
+
+    &:hover>a:only-child, &:focus>a:only-child {
+      color:currentcolor;
+    }
+
+    &:hover>a:only-child:after, &:focus>a:only-child:after {
+      position:absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      background:transparent;
+      content:"";
+    }
+
+    &:active {
+      color:@sy-primary-color-active;
+      border-color:@sy-primary-color-active;
+      background:#fff;
+    }
+
+    &:active>a:only-child {
+      color:currentcolor;
+    }
+
+    &:active>a:only-child:after {
+      position:absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      background:transparent;
+      content:"";
+    }
+
+    &[disabled], 
+    &[disabled]:hover, 
+    &[disabled]:focus, 
+    &[disabled]:active {
+      color:#00000040;
+      border-color:#d9d9d9;
+      background:#f5f5f5;
+      text-shadow:none;
+      box-shadow:none;
+    }
+    &[disabled]>a:only-child, 
+    &[disabled]:hover>a:only-child, 
+    &[disabled]:focus>a:only-child, 
+    &[disabled]:active>a:only-child {
+      color:currentcolor;
+    }
+    &[disabled]>a:only-child:after, 
+    &[disabled]:hover>a:only-child:after, 
+    &[disabled]:focus>a:only-child:after, 
+    &[disabled]:active>a:only-child:after {
+      position:absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      background:transparent;
+      content:"";
+    }
+    &:hover, &:focus, &:active {
+      text-decoration:none;
+      background:#fff;
+    }
+}
+
+
+.sy-button-primary {
+  color:#fff;
+  border-color:@sy-primary-color;
+  background:@sy-primary-color;
+  text-shadow:0 -1px 0 rgba(0, 0, 0, .12);
+  box-shadow:0 2px #0000000b;
+
+  &>a:only-child {
+    color:currentcolor;
+  }
+
+  &>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:hover, &:focus {
+    color:#fff;
+    border-color:@sy-primary-color-hover;
+    background:@sy-primary-color-hover;
+  }
+  &:hover>a:only-child, &:focus>a:only-child {
+    color:currentcolor;
+  }
+  &:hover>a:only-child:after, &:focus>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:active {
+    color:#fff;
+    border-color:@sy-primary-color-active;
+    background:@sy-primary-color-active;
+  }
+  &:active>a:only-child {
+    color:currentcolor;
+  }
+  &:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &[disabled], 
+  &[disabled]:hover, 
+  &[disabled]:focus, 
+  &[disabled]:active {
+    color:#00000040;
+    border-color:#d9d9d9;
+    background:#f5f5f5;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &[disabled]>a:only-child,
+  &[disabled]:hover>a:only-child,
+  &[disabled]:focus>a:only-child,
+  &[disabled]:active>a:only-child {
+    color:currentcolor;
+  }
+  &[disabled]>a:only-child:after, 
+  &[disabled]:hover>a:only-child:after, 
+  &[disabled]:focus>a:only-child:after, 
+  &[disabled]:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+}
+
+.sy-button-dashed {
+  color:#000000d9;
+  border-color:@border-color;
+  background:#fff;
+  border-style: dashed;
+
+  &>a:only-child {
+    color:currentcolor;
+  }
+  &>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:hover, &:focus {
+    color:@sy-primary-color-hover;
+    border-color:@sy-primary-color-hover;
+    background:#fff;
+  }
+  &:hover>a:only-child, &:focus>a:only-child {
+    color:currentcolor;
+  }
+  &:hover>a:only-child:after, &:focus>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:active {
+    color:@sy-primary-color-active;
+    border-color:@sy-primary-color-active;
+    background:#fff;
+  }
+  &:active>a:only-child {
+    color:currentcolor;
+  }
+  &:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &[disabled], 
+  &[disabled]:hover, 
+  &[disabled]:focus, 
+  &[disabled]:active {
+    color:#00000040;
+    border-color:@border-color;
+    background:#f5f5f5;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &[disabled]>a:only-child, 
+  &[disabled]:hover>a:only-child, 
+  &[disabled]:focus>a:only-child, 
+  &[disabled]:active>a:only-child {
+    color:currentcolor;
+  }
+  &[disabled]>a:only-child:after, 
+  &[disabled]:hover>a:only-child:after, 
+  &[disabled]:focus>a:only-child:after, 
+  &[disabled]:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+}
+
+.sy-button-text {
+  color:#000000d9;
+  border-color:transparent;
+  background:transparent;
+  box-shadow:none;
+
+  &>a:only-child {
+    color:currentcolor;
+  }
+  &>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:hover, &:focus {
+    color:@sy-primary-color-hover;
+    border-color:@sy-primary-color-hover;
+    background:transparent;
+  }
+  &:hover>a:only-child, &:focus>a:only-child {
+    color:currentcolor;
+  }
+  &:hover>a:only-child:after, &:focus>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:active {
+    color:@sy-primary-color-active;
+    border-color:@sy-primary-color-active;
+    background:transparent;
+  }
+  &:active>a:only-child {
+    color:currentcolor;
+  }
+  &:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+    color:#00000040;
+    border-color:@border-color;
+    background:#f5f5f5;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &:hover, &:focus {
+    color:#000000d9;
+    background:rgba(0, 0, 0, .018);
+    border-color:transparent;
+  }
+  &:active {
+    color:#000000d9;
+    background:rgba(0, 0, 0, .028);
+    border-color:transparent;
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+    color:#00000040;
+    border-color:transparent;
+    background:transparent;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &[disabled]>a:only-child, 
+  &[disabled]:hover>a:only-child, 
+  &[disabled]:focus>a:only-child, 
+  &[disabled]:active>a:only-child {
+    color:currentcolor;
+  }
+  &[disabled]>a:only-child:after, 
+  &[disabled]:hover>a:only-child:after, 
+  &[disabled]:focus>a:only-child:after, 
+  &[disabled]:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+}
+
+.sy-button-link {
+  color:@sy-primary-color;
+  border-color:transparent;
+  background:transparent;
+  box-shadow:none;
+
+  &>a:only-child {
+    color:currentcolor;
+  }
+  &>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:hover, &:focus {
+    color:@sy-primary-color-hover;
+    border-color:@sy-primary-color-hover;
+    background:transparent;
+  }
+  &:hover>a:only-child, &:focus>a:only-child {
+    color:currentcolor;
+  }
+  &:hover>a:only-child:after, &:focus>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:active {
+    color:@sy-primary-color-active;
+    border-color:@sy-primary-color-active;
+    background:transparent;
+  }
+  &:active>a:only-child {
+    color:currentcolor;
+  }
+  &:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &[disabled], 
+  &[disabled]:hover, 
+  &[disabled]:focus, 
+  &[disabled]:active {
+    color:#00000040;
+    border-color:@border-color;
+    background:#f5f5f5;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &:hover {
+    background:transparent;
+  }
+  &:hover, &:focus, &:active {
+    border-color:transparent;
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+    color:#00000040;
+    border-color:transparent;
+    background:transparent;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &[disabled]>a:only-child, 
+  &[disabled]:hover>a:only-child, 
+  &[disabled]:focus>a:only-child, 
+  &[disabled]:active>a:only-child {
+    color:currentcolor;
+  }
+  &[disabled]>a:only-child:after, 
+  &[disabled]:hover>a:only-child:after, 
+  &[disabled]:focus>a:only-child:after, 
+  &[disabled]:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+}
+
+.sy-button-ghost {
+  color:#000000d9;
+  border-color:#d9d9d9;
+  background:transparent;
+
+  &>a:only-child {
+    color:currentcolor;
+  }
+  &>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:hover, &-ghost:focus {
+    color:@sy-primary-color-hover;
+    border-color:@sy-primary-color-hover;
+    background:transparent;
+  }
+  &:hover>a:only-child, &:focus>a:only-child {
+    color:currentcolor;
+  }
+  &:hover>a:only-child:after, &:focus>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:active {
+    color:@sy-primary-color-active;
+    border-color:@sy-primary-color-active;
+    background:transparent;
+  }
+  &:active>a:only-child {
+    color:currentcolor;
+  }
+  &:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+    color:#00000040;
+    border-color:#d9d9d9;
+    background:#f5f5f5;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &[disabled]>a:only-child, 
+  &[disabled]:hover>a:only-child, 
+  &[disabled]:focus>a:only-child, 
+  &[disabled]:active>a:only-child {
+    color:currentcolor;
+  }
+  &[disabled]>a:only-child:after, 
+  &[disabled]:hover>a:only-child:after, 
+  &[disabled]:focus>a:only-child:after, 
+  &[disabled]:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+}
+
+.sy-button-dangerous {
+  color:@sy-error-color;
+  border-color:@sy-error-color;
+  background:#fff;
+  &>a:only-child {
+    color:currentcolor;
+  }
+  &>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:hover, &:focus {
+    color:@sy-error-color-hover;
+    border-color:@sy-error-color-hover;
+    background:#fff;
+  }
+  &:hover>a:only-child, &:focus>a:only-child {
+    color:currentcolor;
+  }
+  &:hover>a:only-child:after, &:focus>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:active {
+    color:@sy-error-color-active;
+    border-color:@sy-error-color-active;
+    background:#fff;
+  }
+  &:active>a:only-child {
+    color:currentcolor;
+  }
+  &:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+    color:#00000040;
+    border-color:#d9d9d9;
+    background:#f5f5f5;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &[disabled]>a:only-child, 
+  &[disabled]:hover>a:only-child, 
+  &[disabled]:focus>a:only-child, 
+  &[disabled]:active>a:only-child {
+    color:currentcolor;
+  }
+  &[disabled]>a:only-child:after, 
+  &[disabled]:hover>a:only-child:after, 
+  &[disabled]:focus>a:only-child:after, 
+  &[disabled]:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+}
+
+.sy-button-dangerous.sy-button-primary {
+  color:#fff;
+  border-color:@sy-error-color;
+  background:@sy-error-color;
+  text-shadow:0 -1px 0 rgba(0, 0, 0, .12);
+  box-shadow:0 2px #0000000b;
+
+  &>a:only-child {
+    color:currentcolor;
+  }
+  &>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:hover, &:focus {
+    color:#fff;
+    border-color:@sy-error-color-hover;
+    background:@sy-error-color-hover;
+  }
+  &:hover>a:only-child, &:focus>a:only-child {
+    color:currentcolor;
+  }
+  &:hover>a:only-child:after, &:focus>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:active {
+    color:#fff;
+    border-color:@sy-error-color-active;
+    background:@sy-error-color-active;
+  }
+  &:active>a:only-child {
+    color:currentcolor;
+  }
+  &:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+    color:#00000040;
+    border-color:#d9d9d9;
+    background:#f5f5f5;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &[disabled]>a:only-child, 
+  &[disabled]:hover>a:only-child, 
+  &[disabled]:focus>a:only-child, 
+  &[disabled]:active>a:only-child {
+    color:currentcolor;
+  }
+  &[disabled]>a:only-child:after, 
+  &[disabled]:hover>a:only-child:after, 
+  &[disabled]:focus>a:only-child:after, 
+  &[disabled]:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+}
+.sy-button-dangerous.sy-button-link {
+  color:@sy-error-color;
+  border-color:transparent;
+  background:transparent;
+  box-shadow:none;
+
+  &>a:only-child {
+    color:currentcolor;
+  }
+  &>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:hover, &:focus {
+    color:@sy-primary-color-hover;
+    border-color:@sy-primary-color-hover;
+    background:transparent;
+  }
+  &:active {
+    color:@sy-primary-color-active;
+    border-color:@sy-primary-color-active;
+    background:transparent;
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+    color:#00000040;
+    border-color:#d9d9d9;
+    background:#f5f5f5;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &:hover, &:focus {
+    color:@sy-error-color-hover;
+    border-color:transparent;
+    background:transparent;
+  }
+  &:hover>a:only-child, &:focus>a:only-child {
+    color:currentcolor;
+  }
+  &:hover>a:only-child:after, &:focus>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:active {
+    color:@sy-error-color-active;
+    border-color:transparent;
+    background:transparent;
+  }
+  &:active>a:only-child {
+    color:currentcolor;
+  }
+  &:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+    color:#00000040;
+    border-color:transparent;
+    background:transparent;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &[disabled]>a:only-child, 
+  &[disabled]:hover>a:only-child, 
+  &[disabled]:focus>a:only-child, 
+  &[disabled]:active>a:only-child {
+    color:currentcolor;
+  }
+  &[disabled]>a:only-child:after, 
+  &[disabled]:hover>a:only-child:after, 
+  &[disabled]:focus>a:only-child:after, 
+  &[disabled]:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+}
+
+.sy-button-dangerous.sy-button-text {
+  color:@sy-error-color;
+  border-color:transparent;
+  background:transparent;
+  box-shadow:none;
+
+  &>a:only-child {
+    color:currentcolor;
+  }
+  &>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:hover, &:focus {
+    color:@sy-primary-color-hover;
+    border-color:@sy-primary-color-hover;
+    background:transparent;
+  }
+  &:active {
+    color:@sy-primary-color-active;
+    border-color:@sy-primary-color-active;
+    background:transparent;
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+    color:#00000040;
+    border-color:#d9d9d9;
+    background:#f5f5f5;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &:hover, &:focus {
+    color:@sy-error-color-hover;
+    border-color:transparent;
+    background:rgba(0, 0, 0, .018)
+  }
+  &:hover>a:only-child, &:focus>a:only-child {
+    color:currentcolor;
+  }
+  &:hover>a:only-child:after, &:focus>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:active {
+    color:@sy-error-color-active;
+    border-color:transparent;
+    background:rgba(0, 0, 0, .028);
+  }
+  &:active>a:only-child {
+    color:currentcolor;
+  }
+  &:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+    color:#00000040;
+    border-color:transparent;
+    background:transparent;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &[disabled]>a:only-child, 
+  &[disabled]:hover>a:only-child, 
+  &[disabled]:focus>a:only-child, 
+  &[disabled]:active>a:only-child {
+    color:currentcolor;
+  }
+  &[disabled]>a:only-child:after, 
+  &[disabled]:hover>a:only-child:after, 
+  &[disabled]:focus>a:only-child:after, 
+  &[disabled]:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+}
+
+.sy-button.sy-button-background-ghost {
+  color:#fff;
+  border-color:#fff;
+
+  &, &:hover, &:active, &:focus {
+    background:transparent;
+  }
+
+  &:hover, &:focus {
+    color:@sy-primary-color-hover;
+    border-color:@sy-primary-color-hover;
+  }
+
+  &:active {
+    color:@sy-primary-color-active;
+    border-color:@sy-primary-color-active;
+  }
+
+  &[disabled] {
+    color:#00000040;
+    background:transparent;
+    border-color:@border-color;
+  }
+}
+
+.sy-button-background-ghost.sy-button-primary {
+  color:@sy-primary-color;
+  border-color:@sy-primary-color;
+  text-shadow:none;
+
+  &>a:only-child {
+    color:currentcolor;
+  }
+  &>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:hover, &:focus {
+    color:@sy-primary-color-hover;
+    border-color:@sy-primary-color-hover;
+    background:transparent;
+  }
+  &:hover>a:only-child, &:focus>a:only-child {
+    color:currentcolor;
+  }
+  &:hover>a:only-child:after, &:focus>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:active {
+    color:@sy-primary-color-active;
+    border-color:@sy-primary-color-active;
+    background:transparent;
+  }
+  &:active>a:only-child {
+    color:currentcolor;
+  }
+  &:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+    color:#00000040;
+    border-color:@border-color;
+    background:#f5f5f5;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &[disabled]>a:only-child, 
+  &[disabled]:hover>a:only-child, 
+  &[disabled]:focus>a:only-child, 
+  &[disabled]:active>a:only-child {
+    color:currentcolor;
+  }
+  &[disabled]>a:only-child:after, 
+  &[disabled]:hover>a:only-child:after, 
+  &[disabled]:focus>a:only-child:after, 
+  &[disabled]:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+}
+
+
+.sy-button-background-ghost.sy-button-dangerous {
+  color:@sy-error-color;
+  border-color:@sy-error-color;
+  text-shadow:none;
+  &>a:only-child {
+    color:currentcolor;
+  }
+  &>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:hover, &:focus {
+    color:@sy-error-color-hover;
+    border-color:@sy-error-color-hover;
+    background:transparent;
+  }
+  &:hover>a:only-child, &:focus>a:only-child {
+    color:currentcolor;
+  }
+  &:hover>a:only-child:after, &:focus>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:active {
+    color:@sy-error-color-active;
+    border-color:@sy-error-color-active;
+    background:transparent;
+  }
+  &:active>a:only-child {
+    color:currentcolor;
+  }
+  &:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+    color:#00000040;
+    border-color:#d9d9d9;
+    background:#f5f5f5;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &[disabled]>a:only-child, 
+  &[disabled]:hover>a:only-child, 
+  &[disabled]:focus>a:only-child, 
+  &[disabled]:active>a:only-child {
+    color:currentcolor;
+  }
+  &[disabled]>a:only-child:after, 
+  &[disabled]:hover>a:only-child:after, 
+  &[disabled]:focus>a:only-child:after, 
+  &[disabled]:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+}
+
+.sy-button-background-ghost.sy-button-dangerous.sy-button-link {
+  color:@sy-error-color;
+  border-color:transparent;
+  text-shadow:none;
+  &>a:only-child {
+    color:currentcolor;
+  }
+  &>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:hover, &:focus {
+    color:@sy-error-color-active;
+    border-color:transparent;
+    background:transparent;
+  }
+  &:hover>a:only-child, &:focus>a:only-child {
+    color:currentcolor;
+  }
+  &:hover>a:only-child:after, &:focus>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &:active {
+    color:@sy-error-color-active;
+    border-color:transparent;
+    background:transparent;
+  }
+  &:active>a:only-child {
+    color:currentcolor;
+  }
+  &:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+  &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active {
+    color:#00000040;
+    border-color:@border-color;
+    background:#f5f5f5;
+    text-shadow:none;
+    box-shadow:none;
+  }
+  &[disabled]>a:only-child, 
+  &[disabled]:hover>a:only-child, 
+  &[disabled]:focus>a:only-child, 
+  &[disabled]:active>a:only-child {
+    color:currentcolor;
+  }
+  &[disabled]>a:only-child:after, 
+  &[disabled]:hover>a:only-child:after, 
+  &[disabled]:focus>a:only-child:after, 
+  &[disabled]:active>a:only-child:after {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:transparent;
+    content:"";
+  }
+}
+
+
