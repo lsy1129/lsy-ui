@@ -1,1 +1,0 @@
-export const siteData = JSON.parse("{\"base\":\"/lsy-ui/\",\"lang\":\"en-US\",\"title\":\"\",\"description\":\"\",\"head\":[[\"link\",{\"rel\":\"icon\",\"href\":\"/images/logo.png\"}]],\"locales\":{\"/\":{\"lang\":\"zh-CN\",\"title\":\"VuePress\",\"description\":\"Vue 驱动的静态网站生成器\"}}}")

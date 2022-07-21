@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy": "npm run docs:build && bash deploy.sh"
   },
   "keywords": [],
   "author": "",
