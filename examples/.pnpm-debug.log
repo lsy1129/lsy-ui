@@ -1,0 +1,20 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "E:\\other\\lsy-ui"
+  },
+  "1 error pnpm": {
+    "errno": 1,
+    "code": "ELIFECYCLE",
+    "pkgid": "examples@1.0.0",
+    "stage": "docs:build",
+    "script": "vuepress build docs",
+    "pkgname": "examples",
+    "err": {
+      "name": "pnpm",
+      "message": "examples@1.0.0 docs:build: `vuepress build docs`\nExit status 1",
+      "code": "ELIFECYCLE",
+      "stack": "pnpm: examples@1.0.0 docs:build: `vuepress build docs`\nExit status 1\n    at EventEmitter.<anonymous> (C:\\Users\\GW00265868\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:108610:20)\n    at EventEmitter.emit (events.js:315:20)\n    at ChildProcess.<anonymous> (C:\\Users\\GW00265868\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:95176:18)\n    at ChildProcess.emit (events.js:315:20)\n    at maybeClose (internal/child_process.js:1048:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)"
+    }
+  }
+}

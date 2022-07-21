@@ -1,0 +1,1 @@
+export const data = JSON.parse("{\"key\":\"v-c03241b4\",\"path\":\"/zh/advanced/cookbook/usage-of-client-config.html\",\"title\":\"客户端配置的使用方法\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"excerpt\":\"\",\"headers\":[],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"zh/advanced/cookbook/usage-of-client-config.md\"}")

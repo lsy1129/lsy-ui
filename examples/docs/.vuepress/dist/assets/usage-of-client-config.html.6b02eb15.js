@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-c03241b4","path":"/zh/advanced/cookbook/usage-of-client-config.html","title":"\u5BA2\u6237\u7AEF\u914D\u7F6E\u7684\u4F7F\u7528\u65B9\u6CD5","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"zh/advanced/cookbook/usage-of-client-config.md"}');export{e as data};
