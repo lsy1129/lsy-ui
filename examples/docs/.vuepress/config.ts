@@ -3,7 +3,7 @@ import { defaultTheme, defineUserConfig } from 'vuepress'
 import { navbarZh, sidebarZh } from './configs'
 
 export default defineUserConfig({
-  base: '/lsyUI/',
+  base: '/lsy-ui/',
 
   locales: {
     '/': {
