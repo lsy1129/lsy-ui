@@ -20,6 +20,7 @@
     "vite": "^2.9.14",
     "vite-plugin-dts": "^1.2.1",
     "vite-plugin-libcss": "^1.0.5",
-    "vue": "^3.2.36"
+    "vue": "^3.2.37",
+    "vuepress": "^2.0.0-beta.49"
   }
 }
