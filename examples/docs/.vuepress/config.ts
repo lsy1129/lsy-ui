@@ -2,6 +2,8 @@ import { defaultTheme, defineUserConfig } from 'vuepress'
 
 import { navbarZh, sidebarZh } from './configs'
 
+const blockDemo = require("./components");
+
 export default defineUserConfig({
   base: '/lsy-ui/',
 
@@ -12,6 +14,14 @@ export default defineUserConfig({
       description: 'Vue 驱动的静态网站生成器',
     },
   },
+  
+  plugins: [
+    [
+      blockDemo({
+        path: __dirname,
+      }),
+    ]
+  ],
 
 
   head: [//额外的需要被注入到当前页面的 HTML <head> 中的标签
