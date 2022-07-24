@@ -33,10 +33,16 @@ importers:
       vuepress: registry.npmmirror.com/vuepress/2.0.0-beta.49_less@4.1.3+vue@3.2.37
 
   examples:
-    specifiers: {}
+    specifiers:
+      liusy-ui: workspace:^1.0.3
+    dependencies:
+      liusy-ui: link:../packages/components
 
   packages/components:
-    specifiers: {}
+    specifiers:
+      '@liusy-ui/utils': workspace:^1.0.9
+    dependencies:
+      '@liusy-ui/utils': link:../utils
 
   packages/utils:
     specifiers: {}
